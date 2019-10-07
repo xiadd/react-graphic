@@ -19,7 +19,10 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@antv/g": "^3.4.6",
+    "react-reconciler": "^0.22.2"
+  },
   "peerDependencies": {
     "react-reconciler": "^0.22.2",
     "scheduler": "^0.16.2",
