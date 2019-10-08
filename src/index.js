@@ -59,10 +59,7 @@ GRenderer.injectIntoDevTools({
   findFiberByHostInstance: () => null,
   bundleType: process.env.NODE_ENV !== 'production' ? 1 : 0,
   version: React.version,
-  rendererPackageName: 'react-cus',
-  getInspectorDataForViewTag: (...args) => {
-    console.log(args);
-  }
+  rendererPackageName: 'react-g'
 })
 
 export default {
