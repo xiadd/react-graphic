@@ -24,14 +24,15 @@
     "react-reconciler": "^0.22.2"
   },
   "peerDependencies": {
+    "react": "16.x",
     "react-reconciler": "^0.22.2",
-    "scheduler": "^0.16.2",
-    "react": "16.x"
+    "scheduler": "^0.16.2"
   },
   "devDependencies": {
     "nwb": "0.23.x",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "react-live": "^2.2.1"
   },
   "author": "",
   "homepage": "",
