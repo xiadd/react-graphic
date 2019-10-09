@@ -1,7 +1,11 @@
 module.exports = {
   type: 'react-component',
+  webpack: {
+    html: {
+      template: 'demo/src/index.html'
+    }
+  },
   npm: {
-    esModules: true,
     umd: {
       global: 'y',
       externals: {

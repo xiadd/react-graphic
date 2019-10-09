@@ -2,9 +2,7 @@ import React, {Component} from 'react'
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 import {render} from 'react-dom'
 
-import ReactG from '../../src'
-
-const { Canvas, Group, Rect } = ReactG
+import { Canvas, Group, Rect } from '../../src'
 
 const scope = { Canvas, Group, Rect }
 
@@ -36,4 +34,4 @@ class Demo extends Component {
   }
 }
 
-render(<Demo/>, document.querySelector('#demo'))
+render(<Demo/>, document.querySelector('#root'))

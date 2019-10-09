@@ -1,14 +1,14 @@
 import G from '@antv/g'
 import invariant from './invariant'
 import { applyNodeProps } from './makeUpdates'
-
-export * from './HostConfigWithNoPersistence'
-export * from './HostConfigWithNoHydration'
-
 import {
   unstable_scheduleCallback as scheduleDeferredCallback,
   unstable_cancelCallback as cancelDeferredCallback
 } from 'scheduler'
+
+
+export * from './HostConfigWithNoPersistence'
+export * from './HostConfigWithNoHydration'
 
 export {
   unstable_now as now,
