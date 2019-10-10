@@ -4,6 +4,10 @@
 /lib
 /node_modules
 /umd
+/website/node_modules
+/website/build
+/website/yarn.lock
+/demo
 npm-debug.log*
 package-lock.json
 .docz
