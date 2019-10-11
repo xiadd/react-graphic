@@ -1,6 +1,6 @@
 {
-  "name": "react-g",
-  "version": "1.0.0",
+  "name": "react-graphic",
+  "version": "0.0.1",
   "description": "react-g React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -29,15 +29,18 @@
     "scheduler": "^0.16.2"
   },
   "devDependencies": {
+    "@types/react": "^16.9.5",
     "nwb": "0.23.x",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-live": "^2.2.1"
+    "react-live": "^2.2.1",
+    "typescript": "^3.6.4"
   },
   "author": "",
   "homepage": "",
   "license": "MIT",
   "repository": "",
+  "typings": "react-g.d.ts",
   "keywords": [
     "react-component"
   ]
