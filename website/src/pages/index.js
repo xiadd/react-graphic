@@ -1,21 +1,65 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Layout, Menu } from 'antd'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import BasicLayout from '../layouts/BasicLayout'
+import SEO from '../components/seo'
+
+const { SubMenu } = Menu
+const { Content, Sider } = Layout
 
 const IndexPage = () => (
-  <Layout>
+  <BasicLayout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    <Sider width={200} style={{ background: '#fff' }}>
+      <Menu
+        mode="inline"
+        defaultSelectedKeys={['1']}
+        defaultOpenKeys={['sub1']}
+        style={{ height: '100%' }}
+      >
+        <SubMenu
+          key="sub1"
+          title={
+            <span>
+              subnav 1
+            </span>
+          }
+        >
+          <Menu.Item key="1">option1</Menu.Item>
+          <Menu.Item key="2">option2</Menu.Item>
+          <Menu.Item key="3">option3</Menu.Item>
+          <Menu.Item key="4">option4</Menu.Item>
+        </SubMenu>
+        <SubMenu
+          key="sub2"
+          title={
+            <span>
+              subnav 2
+            </span>
+          }
+        >
+          <Menu.Item key="5">option5</Menu.Item>
+          <Menu.Item key="6">option6</Menu.Item>
+          <Menu.Item key="7">option7</Menu.Item>
+          <Menu.Item key="8">option8</Menu.Item>
+        </SubMenu>
+        <SubMenu
+          key="sub3"
+          title={
+            <span>
+              subnav 3
+            </span>
+          }
+        >
+          <Menu.Item key="9">option9</Menu.Item>
+          <Menu.Item key="10">option10</Menu.Item>
+          <Menu.Item key="11">option11</Menu.Item>
+          <Menu.Item key="12">option12</Menu.Item>
+        </SubMenu>
+      </Menu>
+    </Sider>
+    <Content style={{ padding: '24px 0', minHeight: 280 }}>Content</Content>
+  </BasicLayout>
 )
 
 export default IndexPage
