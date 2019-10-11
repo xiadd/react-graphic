@@ -8,14 +8,15 @@
 import React from 'react'
 import { Layout, Menu, Icon } from 'antd'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 import './index.less'
 // import { useStaticQuery, graphql } from 'gatsby'
 const { Header, Content } = Layout
 
-const LayoutContainer = ({ children }) => {
-
+const LayoutContainer = ({ children, location, hasSider }) => {
+  const pathname = location.pathname
   return (
-    <Layout className="basic-layout">
+    <Layout className="basic-layout" >
       <Header className="header">
         <div className="header-inner">
           <div className="logo">
@@ -24,14 +25,19 @@ const LayoutContainer = ({ children }) => {
           <Menu
             mode="horizontal"
             className="header-menu"
+            selectedKeys={[pathname]}
           >
-            <Menu.Item key="1">
-              <Icon type="bulb" />
-              快速开始
+            <Menu.Item key="/quick-start/">
+              <Link to="/quick-start/">
+                <Icon type="bulb" />
+                快速开始
+              </Link>
             </Menu.Item>
-            <Menu.Item key="2">
-              <Icon type="appstore-o" />
-              示例
+            <Menu.Item key="/demos/">
+              <Link to="/demos/">
+                <Icon type="appstore" />
+                示例
+              </Link>
             </Menu.Item>
             <Menu.Item key="3">
               <a href="https://github.com/xiadd/react-g" target="_blank" rel="noopener noreferrer">
@@ -42,8 +48,8 @@ const LayoutContainer = ({ children }) => {
           </Menu>
         </div>
       </Header>
-      <Content style={{ margin: '0 auto', width: 1200 }}>
-        <Layout style={{ background: '#fff' }}>
+      <Content className="layout-content">
+        <Layout className="layout-content-wrapper" hasSider={hasSider}>
           {children}
         </Layout>
       </Content>

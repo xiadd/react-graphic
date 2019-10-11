@@ -7,8 +7,8 @@ import SEO from '../components/seo'
 const { SubMenu } = Menu
 const { Content, Sider } = Layout
 
-const IndexPage = () => (
-  <BasicLayout>
+const IndexPage = ({ location }) => (
+  <BasicLayout location={location} hasSider={true}>
     <SEO title="Home" />
     <Sider width={200} style={{ background: '#fff' }}>
       <Menu
@@ -58,7 +58,7 @@ const IndexPage = () => (
         </SubMenu>
       </Menu>
     </Sider>
-    <Content style={{ padding: '24px 0', minHeight: 280 }}>Content</Content>
+    <Content>Content</Content>
   </BasicLayout>
 )
 
