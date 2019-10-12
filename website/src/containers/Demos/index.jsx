@@ -6,6 +6,7 @@ import SEO from '../../components/SEO'
 import RectDemo from './components/Rect'
 import CircleDemo from './components/Circle'
 import PathDemo from './components/Path'
+import DragDemo from './components/Drag'
 import './index.scss'
 
 const { SubMenu } = Menu
@@ -43,7 +44,9 @@ const IndexPage = ({ location }) => {
             key="sub2"
             title="事件"
           >
-            <Menu.Item key="5">Rect</Menu.Item>
+            <Menu.Item key="5">
+              <Link to="/demos/drag" >拖拽事件</Link>
+            </Menu.Item>
           </SubMenu>
 
           <SubMenu
@@ -59,6 +62,7 @@ const IndexPage = ({ location }) => {
           <Route path="/demos/rect" component={RectDemo} />
           <Route path="/demos/circle" component={CircleDemo} />
           <Route path="/demos/path" component={PathDemo} />
+          <Route path="/demos/drag" component={DragDemo} />
           <Redirect exact from="/demos" to="/demos/rect" />
         </Switch>
         
