@@ -2,7 +2,10 @@
   border: 1px solid #e0e0e0;
   height: 400px;
   overflow: auto;
-  background: #f9f9f9;
+  background: #fff;
+  pre {
+    background: #fff!important;
+  }
 }
 
 .demo-preview {
@@ -10,4 +13,12 @@
   border-left: none;
   overflow: hidden;
   height: 400px;
+  background: #fff;
+}
+
+.demo-wrap {
+  background: #f9f9f9;
+  border: 1px solid #f3f3f3;
+  padding: 10px;
+  border-radius: 8px;
 }

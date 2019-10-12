@@ -14,9 +14,22 @@ import './index.scss'
 const { Header, Content } = Layout
 
 class LayoutContainer extends React.Component {
-  render () {
-    const { location, hasSider, children } = this.props
+
+  getSelectedKey = () => {
+    const { location } = this.props
     const pathname = location.pathname
+    if (pathname.indexOf('quick-start') !== -1) {
+      return '/quick-start/'
+    }
+    if (pathname.indexOf('demos') !== -1) {
+      return '/demos/'
+    }
+
+    return '/'
+  }
+
+  render () {
+    const { hasSider, children } = this.props
     return (
       <Layout className="basic-layout" >
         <Header className="header">
@@ -27,7 +40,7 @@ class LayoutContainer extends React.Component {
             <Menu
               mode="horizontal"
               className="header-menu"
-              selectedKeys={[pathname]}
+              selectedKeys={[this.getSelectedKey()]}
             >
               <Menu.Item key="/">
                 <Link to="/">
