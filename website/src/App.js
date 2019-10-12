@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './containers/Home'
 import QuickStart from './containers/QuickStart'
 import Demos from './containers/Demos'
+import './App.scss'
 
 function App() {
   return (

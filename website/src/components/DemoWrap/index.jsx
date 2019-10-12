@@ -5,7 +5,7 @@ import './index.scss'
 
 export default function DemoWrap ({ Demo, codeString }) {
   return (
-    <Row>
+    <Row style={{ marginBottom: 10 }}>
       <Col span={12} className="demo-code">
         <CodeBlock codeString={codeString} />
       </Col>
