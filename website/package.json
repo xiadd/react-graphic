@@ -1,48 +1,40 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "private": true,
   "dependencies": {
     "antd": "^3.23.6",
-    "gatsby": "^2.15.35",
-    "gatsby-image": "^2.2.27",
-    "gatsby-plugin-less": "^3.0.10",
-    "gatsby-plugin-manifest": "^2.2.21",
-    "gatsby-plugin-offline": "^3.0.14",
-    "gatsby-plugin-react-helmet": "^3.1.11",
-    "gatsby-plugin-sharp": "^2.2.29",
-    "gatsby-source-filesystem": "^2.1.31",
-    "gatsby-transformer-sharp": "^2.2.21",
-    "less": "^3.10.3",
-    "prop-types": "^15.7.2",
+    "babel-plugin-import": "^1.12.2",
+    "customize-cra": "^0.8.0",
+    "node-sass": "^4.12.0",
     "react": "^16.10.2",
+    "react-app-rewired": "^2.1.3",
     "react-dom": "^16.10.2",
     "react-graphic": "^0.0.1",
     "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
     "react-syntax-highlighter": "^11.0.2"
   },
-  "devDependencies": {
-    "prettier": "^1.18.2"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

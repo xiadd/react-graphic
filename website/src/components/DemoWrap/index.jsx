@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'antd'
 import CodeBlock from '../CodeBlock'
-import './index.less'
+import './index.scss'
 
 export default function DemoWrap ({ Demo, codeString }) {
   return (

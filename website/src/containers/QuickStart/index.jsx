@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import BasicLayout from '../../layouts/BasicLayout'
-import SEO from '../../components/seo'
+import SEO from '../../components/SEO'
 
 class Page extends Component {
   render () {

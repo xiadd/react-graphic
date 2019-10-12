@@ -1,11 +1,10 @@
 import React from 'react'
 import { Layout, Menu } from 'antd'
-import './index.less'
-
 import BasicLayout from '../../layouts/BasicLayout'
-import SEO from '../../components/seo'
+import SEO from '../../components/SEO'
 import DemoWrap from '../../components/DemoWrap'
 import Rect, { codeString as rectCode } from '../../components/Demos/Rect'
+import './index.scss'
 
 const { SubMenu } = Menu
 const { Content, Sider } = Layout
