@@ -1,6 +1,6 @@
 .basic-layout {
   min-height: 100vh;
-  background: #f1f1f1;
+  background: #f7f7f7;
   .layout-content {
     margin: 0 auto;
     width: 1200px;
@@ -8,9 +8,10 @@
     &-wrapper {
       min-height: calc(100vh - 104px);
       background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+      border-radius: .25rem;
+      box-shadow: 0 1px 0 rgba(0,0,0,.25);
       overflow: hidden;
+      border: 1px solid #ddd
     }
   }
 }
@@ -18,6 +19,7 @@
 .header {
   margin-bottom: 20px;
   background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15);
   &-inner {
     width: 1200px;
     margin: 0 auto;
