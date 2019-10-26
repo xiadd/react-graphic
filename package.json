@@ -2,8 +2,8 @@
   "name": "react-graphic",
   "version": "0.0.1",
   "description": "react-g React component",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "lib/react-g.js",
+  "module": "es/react-g.js",
   "files": [
     "css",
     "es",
